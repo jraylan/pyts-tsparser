@@ -1,4 +1,4 @@
-# @pytsast/tsparser
+# @pyts/tsparser
 
 TypeScript AST parser and code generator from JSON.
 
@@ -7,8 +7,7 @@ This library receives a JSON representation of TypeScript AST nodes (generated b
 ## Installation
 
 ```bash
-npm install
-npm run build
+npm install @pyts/tsparser
 ```
 
 ## Usage
@@ -16,7 +15,7 @@ npm run build
 ### From JSON String
 
 ```typescript
-import { parseAndPrint } from '@pytsast/tsparser';
+import { parseAndPrint } from '@pyts/tsparser';
 
 const json = JSON.stringify({
   type: 'factory',
@@ -31,7 +30,7 @@ console.log(code); // myVariable
 ### From Serialized Object
 
 ```typescript
-import { toTypeScript } from '@pytsast/tsparser';
+import { toTypeScript } from '@pyts/tsparser';
 
 const serialized = {
   type: 'factory',
@@ -48,7 +47,7 @@ console.log(code);
 ### Low-Level API
 
 ```typescript
-import { deserialize, printNode } from '@pytsast/tsparser';
+import { deserialize, printNode } from '@pyts/tsparser';
 import ts from 'typescript';
 
 // Deserialize JSON to TypeScript AST
@@ -133,7 +132,7 @@ The JSON format matches the output from `pytsast`:
 
 ```typescript
 // TypeScript side
-> import { parseAndPrint } from '@pytsast/tsparser';
+> import { parseAndPrint } from '@pyts/tsparser';
 > 
 > const jsonFromPython = '...'; // Output from Python
 > const tsCode = parseAndPrint(jsonFromPython);
