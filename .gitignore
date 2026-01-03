@@ -1,0 +1,152 @@
+# ---------------------------------------------------------------------
+# .gitignore — Repositório Omnichannel
+# Ignora dependências, ambientes locais, artefatos de build e arquivos sensíveis.
+# ---------------------------------------------------------------------
+
+# -------------------------
+# Sistema operacional
+# -------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+Icon?
+._*
+
+lib/**
+
+# -------------------------
+# Node / JavaScript / Next.js
+# -------------------------
+# Dependências
+node_modules/
+**/node_modules/
+
+# Logs e debug
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Cache, build e runtime
+.next/
+out/
+dist/
+build/
+.vite/
+.svelte-kit/
+.nyc_output/
+coverage/
+coverage/*
+*.tgz
+*.log
+.eslintcache
+*.tsbuildinfo
+
+# Environment files (sensiveis)
+.env
+.env.*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Plataformas de deploy
+.vercel/
+.vercel_build_output/
+.netlify/
+
+# -------------------------
+# Python
+# -------------------------
+# Byte-compiled
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ambientes virtuais
+.venv/
+venv/
+ENV/
+env/
+init/
+.pyenv/
+
+# Testes / cobertura
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+
+# Packaging / distribuição
+build/
+dist/
+*.egg-info/
+.eggs/
+*.egg
+*.whl
+
+# Tipagem / ferramentas
+.mypy_cache/
+.pytype/
+.pyre/
+.pyrightcache/
+.dmypy.json
+
+# -------------------------
+# Bancos de dados / arquivos locais
+# -------------------------
+*.sqlite3
+*.db
+*.sql
+*.sql.gz
+db.sqlite3
+pgdata/
+postgres-data/
+mysql-data/
+
+# -------------------------
+# Docker
+# -------------------------
+docker-compose.override.yml
+docker-compose.*.yml
+.Dockerfile
+.docker/
+
+# -------------------------
+# Chaves, certificados e segredos
+# -------------------------
+*.pem
+*.key
+*.crt
+*.pfx
+.secrets/
+secrets.json
+
+# -------------------------
+# Editor / IDE
+# -------------------------
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+*.code-workspace
+*.iml
+*.iws
+
+# -------------------------
+# Arquivos temporários / backups
+# -------------------------
+*.swp
+*~
+*.tmp
+tmp/
+temp/
+
+# -------------------------
+# Outros
+# -------------------------
+.envrc
+
+# Fim
