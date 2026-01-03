@@ -4,6 +4,14 @@
   "description": "TypeScript AST parser and code generator from JSON",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "author": {
+    "name": "@jraylan",
+    "url": "https://github.com/jraylan"
+  },
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/jraylan/pytsast-tsparser"
+  },
   "bin": {
     "tsparser": "dist/cli.js"
   },
