@@ -1,6 +1,6 @@
 {
   "name": "@pytsast/tsparser",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "TypeScript AST parser and code generator from JSON",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
